@@ -1,7 +1,7 @@
+
 $(document).ready(function() {
-    gfInit();
+    if (sce1) {
+        sce1.init();
+    }
 });
 
-function gfInit() {
-    console.log(window.screen);
-}
