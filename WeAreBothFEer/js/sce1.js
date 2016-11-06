@@ -5,7 +5,7 @@
 
     sce1 = {};
     sce1.init = initSce1;
-    
+
     function initSce1() {
         sce1.can = $('#canvas1')[0];
         sce1.ctx = sce1.can.getContext('2d');
@@ -28,6 +28,7 @@
         generateStars();
         sce1Loop();
     }
+
     function sce1Loop() {
         var now = Date.now();
         sce1.deltaTime = now - sce1.lastTime;
@@ -37,6 +38,7 @@
         drawSkyImg();
         drawStars();
     }
+
     function generateStars() {
         for (var i = 0; i < sce1.starNum; i++) {
             var a_star = new STAR();
@@ -44,6 +46,7 @@
             sce1.stars.push(a_star);
         }
     }
+
     function drawStars() {
         for (var i = 0; i < sce1.starNum; i++) {
             sce1.stars[i].draw();
@@ -51,6 +54,7 @@
         }
 
     }
+
     function drawSkyImg() {
         sce1.ctx.drawImage(sce1.skyPic, 0, 0, sce1.cw, sce1.ch);
     }
