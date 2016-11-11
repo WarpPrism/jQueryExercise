@@ -1,0 +1,26 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-box {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-box ul.img-box {
+    list-style: none;
+}
+
+.main-box ul.img-box li {
+    float: left;
+    overflow: hidden;
+    border: solid 20px #fff;
+}
+
+.main-box .img-box li img {
+    width: 250px;
+    height: 150px;
+}
